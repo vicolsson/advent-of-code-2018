@@ -1383,8 +1383,10 @@ const INPUT = `#1 @ 935,649: 22x22
 #1336 @ 239,879: 27x19
 #1337 @ 280,327: 24x19`;
 
+const startDate = new Date();
 const result = solvePuzzle(INPUT);
 console.log('--- Puzzle result ---\n');
 console.log(result);
 console.log(result === CORRECT_ANSWER ? 'Test success' : 'Test fail');
+console.log('Run time:', (new Date() - startDate)/1000, 'seconds');
 console.log('\n---------------------');
